@@ -10,7 +10,7 @@
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
 # git clone https://github.com/DavBfr/luci-app-netmap package/luci-app-netmap
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-
+#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='192.168.3.2'                                    # IPv4 地址(openwrt后台地址)
